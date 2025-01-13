@@ -1,0 +1,88 @@
+body {
+  background-color: rgba(24, 41, 39, 0.274);
+  .eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+.container {
+  background-color: #152827;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgb(89, 88, 88);
+  color: white;
+  margin: 120px auto;
+  max-width: 600px;
+  padding: 10px;
+  text-decoration: wavy;
+}
+header {
+  margin-bottom: 30px;
+}
+h1 {
+  font-weight: 750px;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.15em #00c8c3;
+}
+
+form {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgb(89, 88, 88);
+  display: flex;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+.instructions {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgb(89, 88, 88);
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px;
+  width: 80%;
+}
+.submit-button {
+  background: #15f4ee;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgb(89, 88, 88);
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 16px;
+  width: 125px;
+}
+
+.poem {
+  background-color: black;
+  border-radius: 10px;
+  border-left: 3px;
+  box-shadow: 0 8px 15px rgb(89, 88, 88);
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  padding: 20px;
+}
+
+footer {
+  color: white;
+  font-size: 13px;
+  margin-top: 30px;
+  text-align: center;
+}
+a {
+  color: #15f4ee;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  font-size: 20px;
+}

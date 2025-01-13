@@ -4,43 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Rollercoaster Poem Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>AI Rollercoaster Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the Rollercoaster poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Poem line 1
-        <br />
-        Poem line 2
-      </div>
-    </main>
-    <footer>
-      Thank you for visiting this AI project coded by
-      <a href="https://github.com/IslaAdventura" target="_blank"
-        >Stephanie Anderson</a
-      >
-      which is on
-      <a href="https://github.com/IslaAdventura/poem-generator" target="_blank"
-        >GitHub</a
-      >
-      and hosted by
-      <a href="https://ai-poem-generator-sanderson.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>A.I. Rollercoaster Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter topic of the rollercoaster poem (ex: screams)"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input
+            type="submit"
+            class="submit-button"
+            name="btnTest2"
+            value="~ Click Me ~"
+          />
+        </form>
+        <div class="poem">
+          Poem line 1
+          <br />
+          Poem line 2
+        </div>
+      </main>
+      <footer>
+        Thank you for visiting this AI project coded by
+        <a href="https://github.com/IslaAdventura" target="_blank"
+          >Stephanie Anderson</a
+        >
+        which is on
+        <a
+          href="https://github.com/IslaAdventura/poem-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted by
+        <a
+          href="https://ai-poem-generator-sanderson.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
