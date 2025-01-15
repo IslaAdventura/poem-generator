@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -18,7 +20,7 @@
         <h1>A.I. Rollercoaster Poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter topic of the rollercoaster poem (ex: screams)"
@@ -34,11 +36,7 @@
             value="~ Click Me ~"
           />
         </form>
-        <div class="poem">
-          Poem line 1
-          <br />
-          Poem line 2
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         Thank you for visiting this AI project coded by
