@@ -27,14 +27,21 @@ h1 {
   text-align: center;
   text-shadow: 0.1em 0.1em 0.15em #00c8c3;
 }
-
-form {
+.form-container {
   background-color: black;
   border-radius: 10px;
   box-shadow: 0 8px 15px rgb(89, 88, 88);
-  display: flex;
   margin-bottom: 40px;
-  padding: 30px;
+  padding: 25px;
+}
+form {
+  display: flex;
+}
+
+.hint {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 7px;
 }
 .instructions {
   border: none;
@@ -69,8 +76,13 @@ form {
   line-height: 2;
   padding: 20px;
 }
+
 .poem strong {
   color: #15f4ee;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
@@ -88,4 +100,18 @@ a {
 a:hover {
   color: white;
   font-size: 20px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

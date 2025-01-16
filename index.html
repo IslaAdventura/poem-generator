@@ -20,24 +20,27 @@
         <h1>~ A.I. Rollercoaster Poem Generator ~</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter topic of rollercoaster poem (ex: screams...)"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input
-            type="submit"
-            class="submit-button"
-            name="btnTest2"
-            value="~ Click Me ~"
-          />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of your rollercoaster poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input
+              type="submit"
+              class="submit-button"
+              name="btnTest2"
+              value="~ Click Me ~"
+            />
+          </form>
+          <div class="hint">topic ex: loops, screams, speed, fear, ...</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         Thank you for visiting this AI project coded by
