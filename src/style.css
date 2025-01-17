@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(24, 41, 39, 0.274);
+  background-color: #393e45;
   .eb-garamond {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -8,7 +8,7 @@ body {
   }
 }
 .container {
-  background-color: #152827;
+  background-color: #202225;
   border-radius: 10px;
   box-shadow: 0 8px 15px rgb(89, 88, 88);
   color: white;
@@ -17,6 +17,7 @@ body {
   padding: 10px;
   text-decoration: wavy;
 }
+
 header {
   margin-bottom: 30px;
 }
@@ -63,7 +64,12 @@ form {
   font-size: 16px;
   margin-left: 10px;
   padding: 16px;
+  transition: transform 0.2s ease;
   width: 125px;
+}
+
+.submit-button:active {
+  transform: scale(0.96);
 }
 
 .poem {
@@ -103,7 +109,7 @@ a:hover {
 }
 
 .blink {
-  animation: blink-animation 1s steps(5, start) infinite;
+  animation: blink-animation 1s steps(5, start) 1;
 }
 @keyframes blink-animation {
   to {
@@ -114,4 +120,22 @@ a:hover {
   to {
     visibility: hidden;
   }
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
 }
